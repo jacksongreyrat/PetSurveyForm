@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pet Survey!</title>
+	  <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Pet Survey Form</h1>
+    <p id="description">Are you a cat or a dog person? <br>(This survey is mini-project for practicing on FreeCodeCamp by Jackson Greyrat)</p>
+    </p>
+    <form action='https://register-demo.freecodecamp.org' id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter Your Name: <input type="text" id="name" placeholder="Name" required /></label>
+        <label id="email-label">Enter Your Email: <input type="email" id="email" placeholder="abc@xxx.com" required /></label>
+        <label id="number-label">Enter Your Age <input type="number" id="number" placeholder="13-120" min="13" max="120" required /></label>
+      </fieldset>
+
+      <fieldset>
+        <label><input type="radio" name="pet-type" value="1" class="inline" /> Dog Person</label>
+        <label><input type="radio" name="pet-type" value="2" class="inline" /> Cat Person</label>
+        <label>
+          <input id="survey-form" type="checkbox" name="terms" value="1" class="inline" required /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+			  </label>
+        <label>
+          <input id="survey-form" type="checkbox" name="terms" value="2" class="inline" required />I confirm all the information!</a>
+        </label>
+      </fieldset>
+      
+      <fieldset>
+        <label>Upload a pets picture (optional): <input type="file" name="file" /></label>
+        <label>Input your pet age (years): <input type="number" name="age" min="13" max="120" />
+			  </label>
+        <label>What is your pet gender?
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">LGBTQ+</option>
+            <option value="4">I have no idea!</option>
+          </select>
+        </label>
+        <label>Tell us more about your pets!
+          <textarea name="about" rows="3" cols="30" placeholder="I have two dogs and the reason that I love them is because..."></textarea>
+			  </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
